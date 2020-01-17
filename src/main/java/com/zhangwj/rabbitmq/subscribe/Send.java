@@ -15,9 +15,10 @@ public class Send {
     private final static String EXCHANGE_NAME="exchange_01";
 
     public static void main(String[] args) throws Exception {
+        //获取连接以及mq通道
         Connection connection= ConnectionUtil.getConnection();
         Channel channel=connection.createChannel();
-
+        //声明exchange
         channel.exchangeDeclare(EXCHANGE_NAME,"fanout");
 
         String message="Hello rabbitMQ";
