@@ -1,0 +1,12 @@
+*.settings
+target
+*.classpath
+*.project
+*.externalToolBuilders
+bin
+classes
+META-INF
+*.mymetadata
+*.iml
+*.idea
+
