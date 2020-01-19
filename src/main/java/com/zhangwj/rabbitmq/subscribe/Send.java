@@ -23,7 +23,7 @@ public class Send {
 
         String message="Hello rabbitMQ";
         channel.basicPublish(EXCHANGE_NAME,"",null,message.getBytes());
-
+        System.out.println("message:"+message);
         channel.close();
         connection.close();
     }
